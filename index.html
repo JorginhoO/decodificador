@@ -17,15 +17,13 @@
   </head>
   <body>
     <header>
-      <nav>
-        <img src="./assets/img/logo.svg" alt="logo decondificador"/>
-      </nav>
+      <img src="./assets/img/logo.svg" alt="logo decondificador"/>
     </header>
 
-    <main>
+    <main class="container">
       <section>
         <textarea
-          class="encode" cols="30" rows="10" placeholder="Digite seu texto"  
+          id="encode"  placeholder="Digite seu texto"  
         ></textarea>
 
         <div class="alert">
@@ -40,10 +38,10 @@
       </section>
 
       <section id="box-text">
-        <textarea  id="yes-message" class="display-none"></textarea>
-        <button class="btn-copy display-none">Copiar</button>
-        <div class="no-message">
-          <img class="img-person" src="./assets/img/person.svg" alt="pessoa segurando uma lupa">
+        <textarea  id="yes-message" class=""></textarea>
+        <img class="img-person display-none" src="./assets/img/person.svg" alt="pessoa segurando uma lupa">
+        <button class="btn-copy ">Copiar</button>
+        <div class="no-message display-none">
           <h3>Nenhuma mensagem encontrada</h3>
           <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
         </div>        
