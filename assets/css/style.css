@@ -1,0 +1,123 @@
+:root {
+    --color-bg:#E5E5E5;
+    --color-box-text:#FFFFFF;
+    --color-light-blue:#0A3871;
+    --color-ligth-dark-gray: #343A40;
+    --color-ligth-gray: #495057;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+   
+}
+nav {
+    margin: 24px 0px 16px 16px;
+}
+
+body{
+    background-color: var(--color-bg);
+}
+
+.encode{
+    background-color: var(--color-bg);
+    width: 343px;
+    height: 150px;
+    margin: 0px 16px 0px 16px;
+    font-size: 32px;
+    font-weight: 400;
+    border: none;
+    text-transform: lowercase;
+    resize: none;
+}
+
+::placeholder{color: var(--color-light-blue);}
+    .encode:focus{
+        outline: none;
+    }
+
+.alert{
+    display: flex;
+    align-items: flex-start;
+    margin-left: 16px;
+    gap:8px;
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 18px;
+}
+
+.btn{
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.btn-encode{
+    width: 343px;
+    height: 67px;
+    margin-bottom: 24px;
+    border: none;
+    border-radius: 24px;
+    background-color: var(--color-light-blue);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-box-text);
+    cursor: pointer;
+}
+
+.btn-decrypt{
+    width: 343px;
+    height: 67px;
+    margin-bottom: 24px;
+    border: 1px solid var(--color-light-blue);
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-light-blue);
+    cursor: pointer;
+}
+
+
+#box-text {
+    background-color: var(--color-box-text);
+    width: 327px;
+    height: 186px;
+    margin: 0px 24px 40px 24px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;    
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px; 
+}
+
+.img-person{
+    display: none;
+}
+
+.no-message > h3 {
+    width: 263px;
+    height: 58px;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    color: var(--color-ligth-dark-gray);
+}
+
+.no-message > p{
+    width: 263px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;    
+    color: var(--color-ligth-gray);
+}
+
+.display-none{
+    display: none;
+}
